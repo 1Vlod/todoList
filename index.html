@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1 class="app__title">Vlod`s todo-list</h1>
+
+    <form action="" class="app__form">
+        <input type="text" class="app__input">
+        <button class="app__add"><i class="fas fa-plus-circle"></i></button>
+        <div class="select__wrapper">
+            <div class="select">All</div>
+            <div class="options">
+                <ul class="options-items hide">
+                    <li class="options-item" data-select="all">All</li>
+                    <li class="options-item" data-select="completed">Completed</li>
+                    <li class="options-item" data-select="uncompleted">UnCompleted</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+
+    <div class="app__wrapper" >
+        <ul class="app__todo-list"></ul>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
